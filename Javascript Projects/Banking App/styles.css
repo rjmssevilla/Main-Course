@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+*{
+  box-sizing:border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#main-container{
+  position:relative;
+  height:98vh;
+  width:98vw;
+  background-image: url("images/bank-background.jpg");
+  background-size: cover;
+  z-index:1;
+}
+
+#login-and-register-container{
+  position:absolute;
+  background:#1C8ADB;
+  width:50%;
+  height:80%;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+
+}
+
+#login-and-register-container-bg{
+  position:absolute;
+  top:5%;
+  left:50%;
+  transform: translateX(-50%);
+  width:23%;
+  height:auto;
+
+}
+
+#login-and-register-container-bg img{
+  width:100%;
+  height:100%;
+}
+
+#header-login-and-register{
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+#header-login-and-register button{
+  background-color: #008CBA; /* Green */
+  border: none;
+  color: white;
+  padding: 5px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+#header-login-and-register button:hover{
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
+
+#login-form{
+  position:absolute;
+  border: 2px solid black;
+  width:80%;
+  height:100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding:10px;
+  background:white;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  z-index:-1;
+}
+
+#login-form i{
+  position:absolute;
+}
+
+.login-form-class{
+  width: 100%; 
+  margin: 15px; 
+}
+
+#login-button{
+  background-color: #008CBA; /* Green */
+  border: none;
+  color: white;
+  padding: 5px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#login-button:hover{
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
+
+#login-button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+#register-form{
+  position:absolute;
+  border: 2px solid black;
+  width:80%;
+  height:100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding:10px;
+  background:white;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  z-index:-2;
+  
+}
+
+#register-form i{
+  position:absolute;
+}
+
+.register-form-class{
+  width: 100%; 
+  margin-top: 10px; 
+}
+
+.register-form-container{
+  margin-top:40px;
+}
+
+#register-button{
+  background-color: #008CBA; /* Green */
+  border: none;
+  color: white;
+  padding: 5px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#register-button:hover{
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
+
+#register-button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.icon { 
+  padding: 10px; 
+  color: green; 
+  min-width: 50px; 
+  text-align: center; 
+} 
+
+.text-input { 
+  width: 100%; 
+  padding: 10px; 
+  text-align: center; 
+} 
+
+#main-bank-app{
+  position:absolute;
+  background:#1C8ADB;
+  width:70%;
+  height:80%;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index:-3;
+  display:none;
+}
+
+#main-bank-app-header{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  background:#0A21F3;
+  padding:5px;
+  color:white;
+}
+
+#logout-button{
+  background-color: #6B8E23; 
+  border: none;
+  color: white;
+  padding: 5px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#logout-button:hover{
+  background-color: red; 
+  color: white;
+}
+
+#logout-button:active {
+  background-color: red;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+#deposit-button{
+  background-color: #0A21F3; 
+  border: none;
+  color: white;
+  padding: 5px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#deposit-button:hover{
+  background-color: #4CAF50; 
+  color: white;
+}
+
+#deposit-button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+#withdraw-button{
+  background-color: #0A21F3; 
+  border: none;
+  color: white;
+  padding: 5px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#withdraw-button:hover{
+  background-color: #4CAF50; 
+  color: white;
+}
+
+#withdraw-button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+#transfer-button{
+  background-color: #0A21F3; 
+  border: none;
+  color: white;
+  padding: 5px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#transfer-button:hover{
+  background-color: #4CAF50; 
+  color: white;
+}
+
+#transfer-button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+#main-bank-app-content{
+  display:flex;
+  justify-content: space-evenly;
+}
+
+.main-bank-app-profile{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex:1;
+  border: 2px solid black;
+  margin:5%;
+  background:#FFFAF0;
+}
+
+.main-bank-app-actions{
+  display:flex;
+  flex-direction: column;
+  flex:2
+}
+
+.main-bank-app-input{
+  margin:30px;
+}
+
+.text-input-main-bank { 
+  width: 80%; 
+  padding: 10px; 
+  text-align: center; 
+} 
+
+input[type="file"] {
+  display: none;
+}
+
+.custom-file-upload {
+  background-color: #0A21F3; /* Green */
+  border: none;
+  color: white;
+  padding: 5px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.custom-file-upload:hover{
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
+

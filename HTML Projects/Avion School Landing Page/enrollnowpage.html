@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="enrollnowpage.css">
+</head>
+<body>
+  <div id="main-container">
+    <div class="main-title">
+      <h1 id="title">Enrollment Form</h1>
+      <p class="description">Congratulations on taking the first step to a career in software development! Start by filling up this application form, 
+        and our team will reach out to guide you through the process. 🚀</p>
+    </div>
+    <div id="survey-form">
+      <form  action="/thankyoupage.html">
+        <div class="survey-class">
+          <label for="name">1. What is your full name?*</label>
+          <input type="text" id="name" class="text-input" name="name" size="70" placeholder="Ex: Rio Sevilla" pattern="[a-zA-Z ]*" title="Enter a valid name." required >
+        </div>
+        <div class="survey-class">
+          <p>2. Are you 18 years old or older?*</p>
+          <input type="radio" id="yes" name="age" value="yes">
+          <label for="yes">Yes</label><br>
+          <input type="radio" id="no" name="age" value="no">
+          <label for="no">No</label><br>
+        </div>
+        <div class="survey-class">
+          <label for="email">3. What is your email address?*</label>
+          <input type="email" id="email" class="text-input" name="email" size="70" placeholder="Ex: oreosevilla@gmail.com" required>
+        </div>
+        <div class="survey-class">
+          <p>4. Are you a Filipino Citizen?*</p>
+          <input type="radio" id="yes" name="age" value="yes">
+          <label for="yes">Yes</label><br>
+          <input type="radio" id="no" name="age" value="no">
+          <label for="no">No</label><br>
+        </div>
+        <div class="survey-class">
+          <label for="home-address">5. What is your home address?*</label>
+          <input type="text" id="home-address" class="text-input" name="home-address" size="70" placeholder="Ex: Unit 2630, Vista Residences, Taft Avenue, Manila" pattern="[a-zA-Z ]*" title="Enter a valid name." required >
+        </div>
+        <div class="survey-class">
+          <label for="type-of-class">6. What type of classes do you wish to enroll in?*</label><br>
+          <input type="radio" id="full-time" name="programming-experience" value="full-time">
+          <label for="full-time"><b>Full-time Course:</b> M-F (9am-6pm)</label><br>
+          <input type="radio" id="part-time" name="programming-experience" value="part-time">
+          <label for="part-time"><b>Part-time Course:</b> M-F (7pm-9pm) & Sat (9pm-1pm)(M-F)</label><br>
+        </div>
+        <div class="survey-class">
+          <label for="payment-method">7. If accepted, which payment method do you plan to take?*</label><br>
+          <p class="description">An Income Share Agreement (ISA) is a method of paying tuition where you only pay when you're hired. You'll receive detailed information later, and your selection is not binding now.</p>
+          <input type="radio" id="ISA" name="payment-method" value="ISA">
+          <label for="ISA"><b>Income share:</b> 17% of your income for 2 years after you're hired.</label><br>
+          <input type="radio" id="upfront" name="payment-method" value="upfront">
+          <label for="upfront"><b>Upfront payment:</b> PHP 80,000</label><br>
+        </div>
+        <div class="survey-class">
+          <p>8. Avion School is for people who want to seek work immediately upon graduation from our course. Do you plan to look for full-time work immediately after Avion School?*</p>
+          <input type="radio" id="yes" name="age" value="yes">
+          <label for="yes">Yes</label><br>
+          <input type="radio" id="no" name="age" value="no">
+          <label for="no">No</label><br>
+        </div>
+        <div class="survey-class">
+          <label for="improved">9. How will you support yourself while attending Avion School?This question is required. *</label><br>
+          <input type="checkbox" id="frontend" name="frontend" value="frontend">
+          <label for="frontend">I have personal savings</label><br>
+          <input type="checkbox" id="backend" name="backend" value="backend">
+          <label for="backend">My family will support me</label><br>
+          <input type="checkbox" id="datavis" name="datavis" value="datavis">
+          <label for="datavis">I have a full-time job</label><br>
+          <input type="checkbox" id="challenges" name="challenges" value="challenges">
+          <label for="challenges">I have a part-time job</label><br>
+          <input type="checkbox" id="opensource" name="opensource" value="opensource">
+          <label for="opensource">I receive unemployment benefits</label><br>
+          <input type="checkbox" id="gitter" name="gitter" value="gitter">
+          <label for="gitter">I receive disability benefits</label><br>
+          <input type="checkbox" id="videos" name="videos" value="videos">
+          <label for="videos">I haven't worked out the details yet</label><br>
+        </div>
+        <div class="survey-class">
+          <label for="programming-experience">10. Which of the following best describes your programming experience?*</label><br>
+          <input type="radio" id="no-experience" name="programming-experience" value="no-experience">
+          <label for="no-experience"><b>No experience:</b> but I'm excited to start learning.</label><br>
+          <input type="radio" id="beginner" name="programming-experience" value="beginner">
+          <label for="beginner"><b>Beginner:</b>  I've done some introductory coding lessons or tutorials.</label><br>
+          <input type="radio" id="intermediate" name="programming-experience" value="intermediate">
+          <label for="intermediate"><b>Intermediate:</b> I have completed some coding classes or tutorials.</label><br>
+          <input type="radio" id="advanced" name="programming-experience" value="advanced">
+          <label for="advanced"><b>Advanced:</b> I can create simple applications.</label><br>
+          <input type="radio" id="professional" name="programming-experience" value="professional">
+          <label for="professional"><b>Professional:</b> I am an experienced software engineer.</label><br>
+        </div>
+        <div class="survey-class">
+          <label for="improved">11. How did you hear about Avion School?*</label><br>
+          <input type="checkbox" id="frontend" name="frontend" value="frontend">
+          <label for="frontend">Facebook</label><br>
+          <input type="checkbox" id="backend" name="backend" value="backend">
+          <label for="backend">Linkedin</label><br>
+          <input type="checkbox" id="datavis" name="datavis" value="datavis">
+          <label for="datavis">Google</label><br>
+          <input type="checkbox" id="challenges" name="challenges" value="challenges">
+          <label for="challenges">Twitter</label><br>
+          <input type="checkbox" id="opensource" name="opensource" value="opensource">
+          <label for="opensource">News</label><br>
+          <input type="checkbox" id="gitter" name="gitter" value="gitter">
+          <label for="gitter">Friend</label><br>
+        </div>
+        <div class="survey-class">
+          <label for="name">12. Do you have a Linkedin profile?</label>
+          <p class="description">Please enter the URL. If none, leave it blank.</p>
+          <input type="text" id="name" class="text-input" name="name" size="70" placeholder="Type your answer here..." pattern="[a-zA-Z ]*" title="Enter a valid name."  >
+        </div>
+        <div class="survey-class">
+          <label for="programming-experience">13. Avion School runs classes every four to eight weeks. How soon are you looking to start class?*</label><br>
+          <input type="radio" id="no-experience" name="programming-experience" value="no-experience">
+          <label for="no-experience">Within the next four weeks.</label><br>
+          <input type="radio" id="beginner" name="programming-experience" value="beginner">
+          <label for="beginner">Within the next three months.</label><br>
+          <input type="radio" id="intermediate" name="programming-experience" value="intermediate">
+          <label for="intermediate">Within the next three to six months.</label><br>
+          <input type="radio" id="advanced" name="programming-experience" value="advanced">
+          <label for="advanced">I'm not sure.</label><br>
+        </div>
+        <input type="submit" value="Submit" class="button">
+        <div id="avion-logo">
+          <img src="images/avionlogo.png">
+        </div>
+        </form>
+    </div>
+  </div>
+</body>
+</html>

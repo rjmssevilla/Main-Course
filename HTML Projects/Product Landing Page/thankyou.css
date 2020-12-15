@@ -1,0 +1,39 @@
+@import url(//db.onlinewebfonts.com/c/4c1241f9ac3623218d475209aa4a3426?family=Cocon);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+#main-container{
+  background: url(/images/footerbg.png);
+  background-size:cover;
+  height:100vh;
+  font-family:"Cocon";
+}
+
+.header{
+  text-align:center;
+}
+
+
+#footer{
+  display:flex;
+  justify-content:center;
+  flex-direction: column;
+  margin-top:10%;
+}
+
+.footer-content{
+  font-family: "Montserrat", sans-serif;
+  margin:10px;
+  color:white;
+}
+
+
+.footer-content a {
+  text-decoration: none;
+  color:white;
+  font-size:40px;
+  
+}
+
+ul {
+  list-style-type: none;
+}

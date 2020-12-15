@@ -1,0 +1,84 @@
+@import url(//db.onlinewebfonts.com/c/12d2fa3dcf227b9538084a6bcfeafcf0?family=Trajan+Pro);
+body{
+  background: #f6dc35;
+}
+
+#main{
+  /*border: 2px solid black;*/
+  text-align:center;
+}
+
+#title{
+  border: 1px solid white;
+  background-color:#202020;
+  font-family:'Special Elite';
+  color: #f6dc35;
+  font-size: 22px;
+  /*padding: 10px;*/
+  margin-bottom:10px;
+}
+
+
+#image{
+  max-width: 60%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  filter: brightness(70%);
+  border: 2px solid white;
+
+}
+
+#img-caption{
+  border: 1px solid black;
+  background-color:cornsilk;
+  font-family: "Bebas Neue";
+  font-size: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:10px;
+  margin-bottom:10px;
+  padding: 10px;
+  max-width: 30%;
+ 
+}
+
+
+
+#tribute-info p{
+  border-top:1px solid black;
+  border-bottom:1px solid black;
+  background-color:cornsilk;
+  font-family: "Courier New", Courier, monospace;
+  font-size:20px;
+  padding: 20px;
+  margin:auto;
+  margin-bottom:10px;
+  max-width: 1000px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+
+#tribute-info iframe{
+   max-width: 35%;
+   margin-left: auto;
+   margin-right: auto;
+   display:block;
+   margin-bottom:50px;
+ }
+
+
+#tribute-link{
+  border: 1px solid white;
+  background-color:black;
+  font-family: Impact, Charcoal, sans-serif;
+  color: #f6dc35;
+  padding: 10px;
+  margin-top:10px;
+}
+
+#tribute-link a:hover {
+  background-color: cadetblue
+}

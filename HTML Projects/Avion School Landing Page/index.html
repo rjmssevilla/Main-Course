@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1 ">
+  <title>Avion School Landing Page</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="text/javascript" src="/index.js" async></script>
+</head>
+<body>
+  
+  <div id="main-container"> <!--START OF MAIN CONTAINER-->
+    <div id="header"> <!--START OF HEADER-->
+      <div class ="header-img">
+        <a href="#panel1"><img src="images/avionlogo.png" class="avion-logo-header"></a>
+      </div>
+      <nav id="nav-bar">
+        <button class="hamburger" id="hamburger">
+          <i class="fa fa-bars"></i>
+        </button>
+        <ul class="main-nav-list" id="navUL">
+          <li><a href="#panel2">About</a></li>
+          <li><a href="#panel3">Our Team</a></li>
+          <li><a href="#process-container">Process</a></li>
+          <li><a href="#panel5">Clients</a></li>
+          <li><a href="#panel6">Testimonials</a></li>
+          <li><a href="#panel7">Contact Us</a></li>
+        </ul>
+      </nav>  
+      <!--<div class="enroll">
+        <button onclick="document.location='enrollnowpage.html'" class="button-nav">ENROLL NOW</button>
+      </div>-->
+      
+    </div> <!--END OF HEADER-->
+
+    <div id="panel1"> <!--START OF PANEL 1-->
+      <div class="slides">
+        <input type="radio" name="r" id="r1" checked>
+        <input type="radio" name="r" id="r2">
+        <input type="radio" name="r" id="r3">
+        <div class="slide s1">
+          <img src="/images/panel1/Slide1_BG.png" alt="">
+          <div class="slide1-content">
+            <h1 style="font-size:4vw; color:red;">HI I'M ARTHUR</h1>
+            <h3 style="font-size:2vw; color:#464646">SOFTWARE ENGINEER</h3><br><br>
+            <p style="font-size:1.5vw; color:#3B3B3B">Learn the fundamentals of writing code and the skills of the best software engineers.
+              We teach you how to build software, work with teams, and apply for top software jobs
+            </p><br><br>
+           <a href="#panel4"><button class="button-slide1">CHECK OUR COURSES</button></a>
+          </div>
+        </div>
+        <div class="slide">
+         <img src="/images/panel1/Slide2_BG.png" alt="">
+         <div class="slide2-content">
+          <h3 style="font-size:3vw;  color:red;">BECOME A</h3>
+          <h1 style="font-size:4vw; text-indent:10%; color:#464646;">SOFTWARE</h1>
+          <h1 style="font-size:4vw; text-indent:10%; color:#464646;">ENGINEER</h1>
+          <h3 style="font-size:3vw; text-indent:20%; color:red">in 12 weeks!</h3><br><br>
+          <a href="/enrollnowpage.html"><button class="button-slide2">ENROLL NOW</button></a>
+        </div>
+       </div>
+       <div class="slide">
+         <img src="/images/panel1/Slide3_BG.png" alt="">
+         <div class="slide3-content">
+          <h3 style="font-size:6vw;  color:#202020;">EVENTS</h3><br><br>
+          <a href="https://www.facebook.com/events/2827400234162709/" target="_blank"><button style="font-size:1.5vw" class="button-slide3">READ MORE</button><br><br><br><br></a>
+          <p style="font-size:1.5vw; margin-left:10%; color:#898989">Catch our co-founder and CEO talk in the Draper Startup House Manila! He’ll be sharing his insight in building a startup amidst the pandemic and how Avion School makes education easily attainable so everyone 
+            can have their career breakthrough in tech.</p>
+        </div>
+        <div class="slide3-blog">
+          <h1 style="font-size:7vw; opacity: 0.8; color:#DE1715">BLOG</h1>
+        </div>
+        <div class="slide3-tutorials">
+          <h1 style="font-size:7vw;  opacity: 0.8;  color:#DE1715;" class="slide3-h1-TUTO">TUTO<span style="color:WHITE;">RIALS</span></h1>
+        </div>
+       </div>
+       <div id="navigation">
+        <label for="r1" class="bar" id="dot1"></label>
+        <label for="r2" class="bar" id="dot2"></label>
+        <label for="r3" class="bar" id="dot3"></label>
+       </div>
+      </div>
+   
+     
+    </div><!--END OF PANEL 1-->
+
+    <div id="panel2"><!--START OF PANEL 2-->
+      <div class="panel2-content">
+        <h1 style="font-size:6vw; color: white;">HOW THE COURSE WORKS?</h1>
+        <h2 style="font-size:2vw; color:#F9BDBC">We train you the best practices in software development and provide you with the relevant classes to prepare you for real world needs. Classes are taught by industry experts and is structured to ensure you learn what is required to become a successful software engineer.</h2>
+      </div>
+      <div class="panel2-content">
+        <p>Web Application Development</p><br>
+        <p style= "display:inline;" >Programming Fundamentals</p>
+        <p style= "display:inline; padding-left:3%;">Frontend Development</p><br><br>
+        <p style= "display:inline">Career Transitioning</p>
+        <p style= "display:inline; padding-left:3%;">Web Foundations</p>
+      </div>
+   
+    </div><!--END OF PANEL 2-->
+
+    <div id="panel3"><!--START OF PANEL 3-->
+      <div class="panel3-container">
+        <h1 style="font-size:3vw; padding-top: 3%; color:rgb(234, 237, 237); text-align: center;">HI, we're Avion's team. Nice to meet you.</h1><br>
+      <div class="team">
+        <div class="profile">
+          <img src="/images/panel3/Profile_1.png" class="profile-images">
+          <p style="background: rgba(148, 144, 7, 0.72);" class="profile-description">A hustler with swag, Victor’s customer advocacy takes a unicorn approach, mixing equal parts style, substance and je ne sais quoi. There is the traditional method of doing things, and then there’s the Victor way.</p>
+        </div>
+        <div class="profile">
+          <img src="/images/panel3/Profile_2.png" class="profile-images">
+          <p style="background: rgba(146, 25, 45, 0.72);" class="profile-description">Captain of technology and his own sailboat (one day!), John keeps Avion on the forefront of web development. If your project requires more than just a bit of pretty, you will be glad to have him in your corner.</p>
+        </div>
+        <div class="profile">
+          <img src="/images/panel3/Profile_3.png" class="profile-images">
+          <p style="background: rgba(201, 13, 162, 0.72);" class="profile-description">Driven by the limitless potential of digital, rooted in a client-first approach, Amanda is Avion School’s champion of marketing excellence.</p>
+        </div>
+        <div class="profile">
+          <img src="/images/panel3/Profile_4.png" class="profile-images">
+          <p style="background: rgba(26, 85, 22, 0.72);" class="profile-description">Specializing in user interface design, branding, and illustration, Adrian is Avion's senior designer extraordinaire. Digital, print, you name it — Olivia brings strategy and style to everything.</p>
+        </div>
+        <div class="profile">
+          <img src="/images/panel3/Profile_5.png" class="profile-images">
+          <p style="background: rgba(20, 138, 150, 0.72);" class="profile-description">From getting projects done with his organizational skills to keeping the team smiling with his great sense of humor, Maurus is the go-to person to keeping things moving at Avion.</p>
+        </div>
+        <div class="profile">
+          <img src="/images/panel3/Profile_6.png" class="profile-images">
+          <p style="background: rgba(20, 14, 106, 0.72);" class="profile-description">Pau takes on complicated dev challenges with a positive attitude and calm confidence that keeps our projects running smoothly.</p>
+        </div>
+        <div class="profile">
+          <img src="/images/panel3/Profile_7.png" class="profile-images">
+          <p style="background: rgba(93, 12, 141, 0.72);" class="profile-description">With a great attitude and an eye for details, Analyn brings stellar organization to the fast-paced day-to-day operations at Avion.</p>
+        </div>
+       </div>
+      </div>
+    </div><!--END OF PANEL 3-->
+    
+    <div id="panel4"><!--START OF PANEL 4-->
+
+      <div id="courses-container"> <!--START OF COURSES-CONTAINER-->
+        <div id="courses-content"> 
+          <img src="/images/panel4/Left Arrow.png" class="prev" onclick="plusDivs(-1)">
+          <img src="/images/panel4/Right Arrow.png" class="next" onclick="plusDivs(1)">
+          
+           <div class="courses-slides">
+
+              <div class="courses-img">
+                <div class="img-1">
+                  <img src="/images/panel4/HTML-CSS-Image.png" >
+                </div>
+                <div class="img-2">
+                  <img src="/images/panel4/Border.png" class="border-img">
+                </div>
+              </div>
+              
+              <div class="description">
+                <h1 style="font-size:2.2vw;">COURSES</h1>
+                <h1 style="font-size:3vw; color:red;" >HTML & CSS</h1><hr><br>
+                <p>HTML (the Hypertext Markup Language) and CSS (Cascading Style Sheets) are two of the core technologies for building Web pages. HTML provides the structure of the page, CSS the (visual and aural) layout, for a variety of devices.</p>
+              </div>
+           </div>
+
+           <div class="courses-slides">
+
+            <div class="courses-img">
+              <div class="img-1">
+                <img src="/images/panel4/Javascript-Image.png" >
+              </div>
+              <div class="img-2">
+                <img src="/images/panel4/Border-2.jpg" class="border-img">
+              </div>
+            </div>
+      
+            <div class="description">
+              <h1 style="font-size:2.2vw;">COURSES</h1>
+              <h1 style="font-size:3vw; color:red;">JAVASCRIPT</h1><hr><br>
+              <p>JavaScript® (often shortened to JS) is a lightweight, interpreted, object-oriented language with first-class functions, and is best known as the scripting language for Web pages, but it's used in many non-browser environments as well.</p>
+            </div>
+         </div>
+
+         <div class="courses-slides">
+
+          <div class="courses-img">
+            <div class="img-1">
+              <img src="/images/panel4/RubyOnNails-Image.png">
+            </div>
+            <div class="img-2">
+              <img src="/images/panel4/Border-3.jpg" class="border-img">
+            </div>
+          </div>
+            
+            <div class="description">
+              <h1 style="font-size:2.2vw;">COURSES</h1>
+              <h1 style="font-size:3vw; color:red;">RUBY ON RAILS</h1><hr><br>
+              <p>Ruby on Rails, sometimes known as "RoR" or just "Rails," is an open source framework for Web development in Ruby, an object-oriented programming (OOP) language similar to Perl and Python.</p>
+            </div> 
+         </div>
+
+        </div>
+      </div> <!--END OF COURSES CONTAINER-->
+
+      <div id="process-container">
+        <h1>OUR PROCESS </h1>
+        <div id="process-content">
+          <div class="admissions-bootcamp-career">
+            <img src="/images/panel4/Admission.png" class="admissions-images">
+            <h2>ADMISSIONS</h2>
+            <p>We took the time to make admissions easy: an online application, a 1:1 video interview, a tech challenge and you’re done.</p>
+          </div>
+          <div class="admissions-bootcamp-career">
+            <img src="/images/panel4/Bootcamp.png" class="bootcamp-images">
+            <h2>BOOTCAMP</h2>
+            <p>Our course is structured with real world problems in mind. You learn only what’s needed and get taught by top-notch software engineers.</p>
+          </div>
+          <div class="admissions-bootcamp-career">
+            <img src="/images/panel4/Career.png" class="career-images">
+            <h2>CAREER</h2>
+            <p>Tech startups are always on the lookout for engineers which is why we’ve partnered with all the best startups to make finding a job easy.</p>
+          </div>
+        </div>
+      </div>
+
+    </div> <!--END OF PANEL 4-->
+
+    <div id="panel5"> <!--START OF PANEL 5-->
+      <h1 style="font-size:3vw; padding-top: 2%;color:red;">OUR CLIENTS</h1>
+
+        <div class=clients-images>
+          <img src="images/panel5/Logo 1.png">
+          <img src="images/panel5/Logo 2.png">
+          <img src="images/panel5/Logo 3.png">
+          <img src="images/panel5/Logo 4.png">
+          <img src="images/panel5/Logo 5.png">
+          <img src="images/panel5/Logo 6.png">
+        </div>
+      </div>
+    </div> <!--END OF PANEL 5-->
+    
+  <div id="panel6"> <!--START OF PANEL 6-->
+
+    <div class="panel6-content">
+
+      <div class="panel6-content-inner1">
+
+        <div class="inner1-1">
+          <div class="JackMa">
+            <div class="quotation">
+             <br><q style= color:white;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem iste et quaerat voluptas vero sit ipsum accusantium, tempora labore quia, animi enim quibusdam incidunt nobis exercitationem nam cum aut molestiae cumque, minus a soluta asperiores. Et doloremque voluptate repellat vel facere soluta molestias nostrum. Qui cumque blanditiis accusamus quaerat in.</q>
+            </div>
+            <div class="name-and-img-inner1-1">
+              <h5 style="font-size:1.5vw; color:white;">- Jack Ma</h5>
+              <img src="/images/panel6/JackMa.png">
+            </div>
+          </div>
+
+          <div class="ElonMusk">
+            <div class="quotation">
+              <br><q style=color:white;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem iste et quaerat voluptas vero sit ipsum accusantium, tempora labore quia, animi enim quibusdam incidunt nobis exercitationem nam cum aut molestiae cumque, minus a soluta asperiores. Et doloremque voluptate repellat vel facere soluta molestias nostrum. Qui cumque blanditiis accusamus quaerat in.</q>
+            </div>
+            <div class="name-and-img-inner1-1">
+              <h5 style= "font-size:1.5vw; color:white;">- Elon Musk</h5>
+              <img src="/images/panel6/ElonMusk.png">
+            </div>
+          </div>
+          
+        </div>
+
+        <div class="inner1-2">
+          <div class="BillGates">
+            <div class="quotation">
+             <br> <q style=color:white;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet vel, corrupti culpa animi dolores ut accusantium! Veniam, provident quis sint praesentium aliquid corrupti? Minus optio aspernatur eligendi excepturi, dolore iste laboriosam accusantium, alias velit pariatur, suscipit porro minima et deserunt inventore error quibusdam! Dolores officia odit sequi ducimus rerum exercitationem repellendus saepe assumenda beatae voluptatem reprehenderit laudantium eos natus, a excepturi nemo quam molestiae quas. Molestiae voluptas ducimus omnis, aperiam dignissimos, labore iusto suscipit exercitationem architecto adipisci minima veritatis repellat.</q>
+            </div>
+            <div class="name-and-img-BillGates">
+              <h5 style= "font-size:2vw; color:white;">- Bill Gates</h5>
+              <img src="/images/panel6/BillGates.png">
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="panel6-content-inner2">
+          <div class="quotation">
+            <q style="font: size 1vw; color:white;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem iste et quaerat voluptas vero sit ipsum accusantium, tempora labore quia, animi enim quibusdam incidunt nobis exercitationem nam cum aut molestiae cumque, minus a soluta asperiores. Et doloremque voluptate repellat vel facere soluta molestias nostrum. Qui cumque blanditiis accusamus quaerat in.</q>
+          </div>
+          <div class="name-and-img-mark">
+            <h5 style="font-size:1.5vw; color:white;">- Mark Zuckerberg</h5>
+            <img src="/images/panel6/MarkZuckerberg.png">
+          </div>
+        
+       
+      </div>
+
+    </div>
+  </div> <!--END OF PANEL 6-->
+
+  <div id="panel7"> <!--START OF PANEL 7-->
+    <div class="panel7-header">
+      <h1>CONTACT US</h1>
+      <p>Whether you have questions or you would just like to say hello, drop us a note.</p>
+    </div>
+
+    <div class="contact-info">
+      <div class="call-email-loc">
+        <img src="/images/panel7/call.png">
+        <p>CALL US</p>
+        <p><b>+63 (917) 317-3012</b></p>
+      </div>
+      <div class="call-email-loc">
+        <img src="/images/panel7/email.png">
+        <p>EMAIL</p>
+        <p><b>hello@avionschool.com</b></p>
+      </div>
+      <div class="call-email-loc">
+        <img src="/images/panel7/location.png">
+        <p>LOCATION</p>
+        <p><b>Bonifacio Global City, Taguig</b></p>
+      </div>
+    </div>
+  </div> <!--END OF PANEL 7-->
+
+  <div id="footer"> <!--START OF FOOTER-->
+    <div class="footer-logo">
+    <img src="/images/avionlogo.png">
+    <p style="color:grey;">Bonifacio Global City, Taguig</p>
+    <p style="color:grey;">+63 (917) 317-3012</p>
+    <ul class="footer-nav-list">
+      <li><a href="#">Copyright</a></li>
+      <li><a href="#">Privacy</a></li>
+      <li><a href="#">Policies</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Newsroom</a></li>
+    </ul>
+    </div>
+
+    <div class="footer-social">
+      <h1 style="font-size:100%; margin-bottom:3%; color:white;">FOLLOW US:</h1>
+      <div class="footer-social-images">
+        <img src="/images/footer/facebook.png">
+        <img src="/images/footer/instagram.png">
+        <img src="/images/footer/youtube.png">
+        <img src="/images/footer/twitter.png">
+      </div>
+    </div>
+    <hr>
+    <p class="copyright">© Avion School 2020.</p>
+  </div> <!--END OF FOOTER-->
+  </div> <!--END OF MAIN CONTAINER-->
+</body>
+</html>

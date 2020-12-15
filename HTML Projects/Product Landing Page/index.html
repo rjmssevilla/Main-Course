@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+ <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">--> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+  <title>Product Landing Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="main-container"> <!--START OF MAIN CONTAINER-->
+    <header id="header"> <!--START OF HEADER-->
+      <div id="header-img">
+        <img src="/images/orio-logo.png" alt="Oreo Logo">
+      </div>
+      <nav id="nav-bar">
+        <ul class="main-nav-list">
+          <li><a href="#panel1">Home</a></li>
+          <li><a href="#panel2">Our Slogan</a></li>
+          <li><a href="#panel3">Our Products</a></li>
+          <li><a href="#contact-container">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header> <!--END OF HEADER-->
+
+    <div id="about-container"> <!--START OF ABOUT CONTAINER-->
+
+    <div id="panel1"> <!--START OF PANEL 1 CONTAINER)-->
+      <div class ="panel1-content">
+        <img src="/images/orio-content1.png" class="image-orio-content1"  alt="ORIO">
+        <p><span class="paragraph-content1">Treat yourself to a cookie break with Orio cookies.</span>
+          <span class="paragraph-content1">Bite size, crunchy, and packed with rich chocolate;</span> 
+          <span class="paragraph-content1">the perfect munchable cookie.</span> </p>
+      </div>
+      <div class="panel1-content">
+        <img src="/images/orio-content2.png" class="image-orio-content2" width="500" alt="OREOTWOPIECES">
+      </div>
+    </div> <!--END OF PANEL 1 CONTAINER-->
+
+    <div id="panel2"> <!--START OF PANEL 2 CONTAINER-->
+      <div class="panel2-content">
+        <h1>LICK, LICK, LICK!</h1>
+      </div>
+      <div class="panel2-content">
+        <video class="panel2-video" controls>
+          <source src="/videos/twistlickdunk.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div> <!--END OF PANEL 2 CONTAINER-->
+
+    <div id="panel3"> <!--START OF PANEL 3 CONTAINER-->
+      <div id="sub-panel3-container"> <!--START OF PANEL 3 SUB CONTAINER-->
+        <div class="panel3-header">
+          <h1>Satisfy your sweet tooth!</h1>
+        </div>
+        <div class="panel3-product-main"> <!--START OF PANEL 3 PRODUCT MAIN-->
+          <div class="panel3-product">
+            <img src="/images/product1.png" width="300" alt="product1">
+            <h4>ORIO Peanut Butter Sandwhich Cookies </h4>
+            <h5>$3.99</h5>
+            <button>ADD TO BAG</button>
+          </div> 
+          <div class="panel3-product">
+            <img src="/images/product2.png" width="300" alt="product2">
+            <h4>ORIO Birthday Cake Sandwhich Cookies </h4>
+            <h5>$3.99</h5>
+            <button>ADD TO BAG</button>
+          </div> 
+          <div class="panel3-product">
+            <img src="/images/product3.png" width="300" alt="product3">
+            <h4>ORIO Chocolate Marshmallow Sandwhich Cookies </h4>
+            <h5>$3.99</h5>
+            <button>ADD TO BAG</button>
+          </div> 
+        </div> <!--END OF PANEL 3 PRODUCT MAIN-->
+      </div> <!--END OF PANEL 3 SUB CONTAINER-->
+    </div> <!--END OF PANEL 3 CONTAINER-->
+
+    <div id="panel4"> <!--START OF PANEL 4 CONTAINER-->
+      <div id="sub-panel4-container"> <!--START OF PANEL 4 SUB CONTAINER-->
+        <div class="panel4-header">
+          <h1>DARE TO DUNK!</h1>
+        </div>
+        <div class="panel4-product-main"> <!--START OF PANEL 4 PRODUCT MAIN-->
+          <div class="panel4-product">
+            <img src="/images/spooky1.png" class="panel4img" alt="spooky1">
+          </div> 
+          <div class="panel4-product">
+            <img src="/images/spooky2.png" class="panel4img" alt="spooky2">
+          </div> 
+          <div class="panel4-product">
+            <img src="/images/spooky3.png" class="panel4img" alt="spooky3">
+          </div> 
+        </div> <!--END OF PANEL 4 PRODUCT MAIN-->
+      </div>
+    </div> <!--END OF PANEL 4 CONTAINER-->
+   </div> <!--END OF ABOUT CONTAINER-->
+
+   <div id="contact-container"> <!--START OF CONTACT US CONTAINER-->
+    <div class="contact-inner">
+      <img src="/images/happyoreo.png" class="happyoreo" alt="Happy Oreo">
+    </div>
+    <div class="contact-inner">
+      <div class="main-title">
+        <h1 id="title">Get in Touch</h1>
+        <p id="description">Please fill out the quick form and we will be in touch with lightning speed.</p>
+      </div>
+      <div id="survey-form">
+        <form  action="/thankyou.html">
+          <div class="survey-class">
+            <label for="name">Name</label>
+            <input type="text" id="name" class="text-input" name="name" size="70" placeholder="Ex: Rio Sevilla" pattern="[a-zA-Z ]*" title="Enter a valid name." required >
+          </div>
+          <div class="survey-class">
+            <label for="email">Email</label>
+            <input type="email" id="email" class="text-input" name="email" size="70" placeholder="Ex: oreosevilla@gmail.com" required>
+          </div>
+          <div class="survey-class">
+            <label for="suggestions">Message:</label><br>
+            <textarea id="suggestions" name="suggestions" class="text-input" placeholder="Enter your comment here..." rows="4" cols="50"></textarea>
+          </div>
+          <input type="submit" value="Submit" class="button">
+          </form>
+      </div>
+    </div>
+   </div> <!--END OF CONTACT US CONTAINER-->
+
+   <footer id="footer"> <!--START OF FOOTER-->
+    <div class="footer-content">
+      <img src="/images/facebook.png" class="footer-img" alt="facebook">
+      <img src="/images/instagram.png" class="footer-img"alt="instagram">
+      <img src="/images/twitter.png" class="footer-img"alt="twitter">
+      <img src="/images/youtube.png" class="footer-img"alt="youtube">
+    </div>
+    <div class="footer-content">
+      <h1><b>MAY WE HELP YOU?</b></h1>
+    </div>
+    <div class="footer-content">
+      <ul class="footer-nav-list">
+        <li><a href="#">FAQs</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Use</a></li>
+      </ul>
+    </div>
+   </footer> <!--END OF FOOTER-->
+  </div> <!--END OF MAIN CONTAINER-->
+</body>
+</html>

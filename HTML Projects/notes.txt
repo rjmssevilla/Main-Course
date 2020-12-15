@@ -1,0 +1,8 @@
+for the fancy border radius: 
+https://9elements.github.io/fancy-border-radius/
+
+nakatulong sa mga color palettes: 
+https://coolors.co/
+
+CSS Slider: Image Slider with controls using CSS3 Only
+https://www.youtube.com/watch?v=z74ExMz-cWU

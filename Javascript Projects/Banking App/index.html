@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://use.fontawesome.com/6234d63cc2.js"></script>
+</head>
+<body>
+ 
+  <div id="main-container"> <!--START OF MAIN CONTAINER-->
+    <div id="login-and-register-container"><!--START OF LOGIN AND REGISTER CONTAINER-->
+      <div id ="header-login-and-register">
+        <button id ="signin-button">SIGN IN</button>
+        <button id="signup-button">SIGN UP</button>
+      </div>
+
+      <div id="login-and-register-container-bg"><img src="images/bank-bg.png"></div>
+      
+      <div id="login-form">   <!--START OF LOGIN-FORM PANEL-->
+        <form>
+          <div class="login-form-class">
+            <label for="username">Username</label>
+            <input type="text" id="login-username" class="text-input" name="username" placeholder="Enter username" required >
+          </div>
+          <div class="login-form-class">
+            <label for="username">Password</label>
+            <input type="password" id="login-password"  class="text-input" name="password"  placeholder="Enter password" required >
+          </div>
+          <input type="button" value="Login" id="login-button">
+        </form>
+      </div><!--END OF LOGIN-FORM PANEL-->
+
+      <div id="register-form"><!--START OF REGISTER-FORM PANEL-->
+        <form class ="register-form-container">
+          <div class="register-form-class">
+            <label for="register-username">Username</label>
+            <input type="text" id="register-username" class="text-input" name="register-username" placeholder="Enter username" required >
+          </div>
+          <div class="register-form-class">
+            <label for="register-password">Password</label>
+            <input type="password" id="register-password" class="text-input" name="register-password"  placeholder="Enter password" required >
+          </div>
+          <div class="register-form-class">
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" class="text-input" name="confirm-password"  placeholder="Confirm password" required >
+          </div>
+          <input type="button" value="Register" id="register-button">
+        </form>
+      </div><!--END OF REGISTER-FORM PANEL-->
+      
+    </div><!--END OF LOGIN AND REGISTER CONTAINER-->
+
+   <div id="main-bank-app"><!--START OF MAIN BANK APP-->
+
+    <div id="main-bank-app-header"><!--START OF MAIN BANK APP HEADER-->
+      <img src="images/orio-logo.png">
+      <h1>BANK OF OREO</h1>
+      <input type="button" value="Logout" id="logout-button">
+    
+    </div><!--END OF MAIN BANK APP HEADER-->
+
+    <div id="main-bank-app-content"><!--START OF MAIN BANK APP CONTENT-->
+
+      <div class="main-bank-app-profile"><!--START OF MAIN BANK APP PROFILE-->
+      <h1 style="display:inline;">HELLO, <span id="nameOfUser"></span></h1>
+      <img id="myImg" src="#" alt="your image" height=auto width=30%;>
+      <label class="custom-file-upload"><input type="file"/>Upload file </label>
+      <div id ="balance-amount">
+        <h2>BALANCE: <span id ="balance">0</span></h2>
+      </div>
+      </div><!--END OF MAIN BANK APP PROFILE-->
+
+      <div class="main-bank-app-actions"><!--START OF MAIN BANK APP ACTIONS-->
+        <div class="main-bank-app-input"><!--START OF MAIN BANK APP INPUTS-->
+          <input type="text" id="deposit-amount" class="text-input-main-bank" name="deposit-amount"  placeholder="Enter deposit amount" ><br>
+          <input type="button" value="Deposit" id="deposit-button">
+        </div>
+        <div class="main-bank-app-input">
+          <input type="text" id="withdraw-amount" class="text-input-main-bank" name="withdraw-amount"  placeholder="Enter withdraw amount" ><br>
+          <input type="button" value="Withdraw" id="withdraw-button">
+        </div>
+        <div class="main-bank-app-input">
+          <input type="text" id="to-user" class="text-input-main-bank" name="to-user"  placeholder="Enter person's user" >
+          <input type="text" id="transfer-amount" class="text-input-main-bank" name="transfer-amount"  placeholder="Enter transfer amount" ><br>
+          <input type="button" value="Transfer" id="transfer-button">
+        </div><!--END OF MAIN BANK APP INPUTS-->
+      </div><!--END OF MAIN BANK APP ACTIONS-->
+      
+
+    </div><!--END OF MAIN BANK APP CONTENT-->
+
+    
+
+   
+
+   </div><!--END OF MAIN BANK APP-->
+   
+
+  </div><!--END OF MAIN CONTAINER-->
+ 
+  <script src="bankingapp.js"></script>
+</body>
+</html>

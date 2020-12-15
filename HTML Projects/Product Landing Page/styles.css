@@ -1,0 +1,420 @@
+@import url(//db.onlinewebfonts.com/c/4c1241f9ac3623218d475209aa4a3426?family=Cocon);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+/*
+header font: font-family:"Cocon";
+content font: font-family: "Montserrat", sans-serif;
+*/
+
+*{
+  margin:0px;
+  padding:0px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/*MAIN CONTAINER*/
+#main-container{
+  background-color: lightblue;
+}
+
+/*CONTAINER OF THE HEADER*/
+#header{
+  display:flex;
+  background:#224586;
+  justify-content: space-between;
+  align-items:center;
+  font-family:"Cocon";
+  top: 0;
+  position: fixed;
+  width:100%;
+  z-index:100;
+  border:3px solid darkblue;
+}
+
+
+/*CONTAINER OF THE NAVIGATION LIST*/
+#nav-bar{
+  width:700px;
+}
+
+/*CLASS OF THE NAVIGATION LIST*/
+.main-nav-list{
+  display:flex;
+  justify-content: space-around;
+}
+
+ul.main-nav-list{
+  list-style-type: none;
+}
+
+.main-nav-list a:link {
+  text-decoration: none;
+  background:white;
+  border-radius: 40%;
+  padding: 10px;
+}
+
+#about-container{
+  background: url(images/background-content.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Montserrat", sans-serif;
+  width:100vw;
+ 
+}
+/*START OF PANEL 1*/
+#panel1{
+  display:flex;
+  justify-content: space-around;
+  height: 95vh;
+  width:100vw;
+}
+
+.panel1-content{
+  font-size:30px;
+  margin:auto;
+  color:white;
+}
+
+.paragraph-content1{
+  display:block;
+}
+
+.image-orio-content1{
+width:500px;
+height:auto;
+}
+
+.image-orio-content2{
+  width:100%;
+  padding-top:5%;
+  height:auto;
+}
+
+
+#panel2{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  height: 100vh;
+  padding-top:5%;
+}
+
+.panel2-content h1{
+  font-family: "Montserrat", sans-serif;
+  font-size:60px;
+  color:white;
+}
+
+.panel2-video{
+  width:1000px;
+}
+
+#panel3{
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  height:100vh;
+}
+
+#sub-panel3-container{
+  display:flex;
+  flex-direction: column;
+  border:4px solid black;
+  background:white;
+  border-radius:100px;
+  
+}
+
+.panel3-header {
+  font-family:"Cocon";
+  color:#224586;
+  text-align:center;
+}
+
+.panel3-product-main{
+  display:flex;
+  justify-content: space-around;
+}
+
+.panel3-product{
+  margin:50px;
+  text-align:center;
+  width: 300px;
+}
+
+#panel4{
+  display:flex;
+  background:url(/images/panel4BG.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  align-items:center;
+  height:100vh;
+  
+}
+
+.panel4-header {
+  font-family:"Cocon";
+  color:white;
+  text-align:center;
+  font-size: 250%;
+}
+
+.panel4-product-main{
+  display:flex;
+  justify-content: space-around;
+}
+
+.panel4-product{
+  margin:10px;
+  text-align:center;
+  width: 400px;
+}
+
+
+#contact-container{
+  display:flex;
+  height:100vh;
+  background:#2F77BD;
+  color: white;
+  align-items:center;
+}
+
+.contact-inner{
+  max-width: 50%;
+}
+
+.main-title{
+ font-family:"Cocon";
+}
+
+#survey-form{
+
+  font-family: "Montserrat", sans-serif;
+}
+
+.survey-class{
+  margin:20px;
+}
+
+.text-input{
+  width:100%;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.button{
+  width:100%;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 5px;
+  color:white;
+  background-color: green;
+  box-shadow: 0 5px #3e8e41;
+}
+
+.button:hover{
+  background-color:#3e8e41;
+}
+
+.button:active{
+  background-color:#3e8e41;
+  box-shadow: 0 3px #666;
+  transform: translateY(5px);
+}
+
+
+#footer{
+  display:flex;
+  background:url(/images/footerbg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content:center;
+  flex-direction: column;
+  height:100vh;
+}
+
+.footer-content{
+  font-family: "Montserrat", sans-serif;
+  margin:10px;
+  color:white;
+}
+
+
+.footer-content a {
+  text-decoration: none;
+  color:white;
+  font-size:40px;
+  
+}
+
+
+button{
+  background-color: #008CBA;
+}
+
+img{
+  max-width:100%;
+  height:auto;
+}
+
+/*START OF MEDIA QUERY HERE!!!!*/
+/*START OF MEDIA QUERY HERE!!!!*/
+/*START OF MEDIA QUERY HERE!!!!*/
+/*START OF MEDIA QUERY HERE!!!!*/
+/*START OF MEDIA QUERY HERE!!!!*/
+@media only screen and (max-width: 375.2px){
+  #header{
+    width: 100vw;
+  }
+
+  .main-nav-list{
+   justify-content: space-around;
+   margin:1px;
+   font-size:10px;
+  }
+
+  .main-nav-list a:link {
+    border-radius: 40%;
+    padding: 10px;
+    margin:2px;
+  }
+
+  #nav-bar{
+    width: 100vw;
+    height:40px;
+    font-size:10px;
+  }
+
+  #panel1{
+    flex-wrap: wrap;
+    width:100vw;
+    height:80vh;
+    padding-top:70px;
+  }
+  
+  .panel1-content{
+    font-size:11px;
+    margin:10px;
+    width:100vw;
+    text-align:center;
+  }
+
+  .paragraph-content1{
+    margin-top:15px;
+  }
+  .image-orio-content1{
+    width:200px;
+    }
+    
+  .image-orio-content2{
+    width:300px;
+    height:auto;
+  }
+
+  #panel2{
+    height:80vh;
+  
+  }
+  .panel2-content{
+
+    padding: 30px;
+  }
+  .panel2-video{
+    width:340px;
+  }
+
+  #panel3{
+    height:auto;
+    padding-top:25%;
+  }
+  
+  #sub-panel3-container{
+    width:95vw;
+  }
+  
+  .panel3-header {
+    padding:30px;
+  }
+  
+  .panel3-product-main{
+    flex-wrap:wrap;
+    justify-content: space-around;
+  }
+  
+  .panel3-product{
+    border:4px solid grey;
+    border-radius:20px;
+    padding:20px;
+    margin:30px;
+  }
+
+  #panel4{
+    height:auto;
+    margin-top: 30%;
+  }
+
+  #sub-panel4-container{
+    width:95vw;
+  }
+  .panel4-header {
+    text-align:center;
+    font-size: 30px;
+    padding-top:30px;
+  }
+  
+  .panel4-product-main{
+    flex-wrap:wrap;
+    justify-content: space-around;
+  }
+  
+  .panel4-product{
+    margin:10px;
+    text-align:center;
+  }
+
+  #contact-container{
+    flex-direction:column;
+    height:100vh;
+    padding-top:10%;
+  }
+
+  .contact-inner{
+    padding-top:10%;
+    max-width:80%;
+  }
+
+  #footer{
+    display:flex;
+    background:url(/images/footerbg.png);
+    background-repeat: repeat;
+    background-size: auto;
+    justify-content:center;
+    flex-direction: column;
+    height:80vh;
+  }
+  
+  .footer-content{
+    font-family: "Montserrat", sans-serif;
+    margin:10px;
+    color:white;
+  
+  }
+  
+  .footer-img{
+    width:40px;
+    margin:20px;
+  }
+  .footer-content a {
+    text-decoration: none;
+    color:white;
+    font-size:30px;
+    
+  }
+}

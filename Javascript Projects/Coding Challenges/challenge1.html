@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var VictorHeight = 1.5;
+    console.log("Victor's height is:" + VictorHeight+"meters");
+    var VictorMass = 60;
+    console.log("Victor's mass is:" +VictorMass+"kg");
+
+    var JohnHeight = 1.8
+    console.log("John's height is:"+JohnHeight+"meters");
+    var JohnMass = 70
+    console.log("John's Mass is:"+JohnMass+"kg");
+
+    
+
+    var Victorbmi = (VictorMass/(VictorHeight**2));
+    var Johnbmi = (JohnMass/(JohnHeight**2));
+    var result = Victorbmi > Johnbmi;
+
+    console.log("Victor's bmi is:" + Victorbmi)
+    console.log("John's bmi is:" + Johnbmi)
+
+    console.log("Is Victor's BMI higher than John's?" + result)
+</script>
+</body>
+</html>
