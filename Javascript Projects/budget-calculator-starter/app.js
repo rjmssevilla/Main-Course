@@ -69,7 +69,16 @@ function resetFields(){
 }
 
 function getExpensesPercentage (){
-  expensePercentage.textContent = Math.round((parseInt(budgetExpense.textContent)/parseInt(budgetIncome.textContent))*100) + "%"
+  var percentage = Math.round((parseInt(budgetExpense.textContent)/parseInt(budgetIncome.textContent))*100)
+
+  if (isFinite(percentage)){
+    expensePercentage.textContent = percentage + "%";
+    
+  }
+  else {
+    expensePercentage.textContent = 0 + "%";
+  }
+  
 }
 
 function calculateExpensesArrayPercentage (){
@@ -163,10 +172,22 @@ function createExpenseElements(){
   var itemValueInput = document.createTextNode("- " + addValue.value);
   itemValue.appendChild(itemValueInput);
   
+  /*
   for (var i = 0; i < expArray.length; i++){
-    var itemPercentageInput = document.createTextNode(expArray[i].percentage + "%")
+    var itemPercentageInput;
+
+    if (isFinite(expArray[i].percentage)){
+      itemPercentageInput= document.createTextNode(expArray[i].percentage + "%%a");
+      itemPercentage.appendChild(itemPercentageInput)
+    }
+    else {
+      itemPercentageInput = document.createTextNode("hatdog");
+      itemPercentage.appendChild(itemPercentageInput);
+    }
+    
   }
-  itemPercentage.appendChild(itemPercentageInput)
+  */
+  
 }
 
 function removeItemOnce(someArray, currentID) {
@@ -180,8 +201,13 @@ function removeItemOnce(someArray, currentID) {
 function updateExpensePercentage(){
   var itemPercentage = document.getElementsByClassName("item__percentage");
       for (var i = 0; i < expArray.length; i++){
-        itemPercentage[i].textContent = expArray[i].percentage + "%"
-        console.log(expArray[i].percentage)
+        if(isFinite(expArray[i].percentage)){
+          itemPercentage[i].textContent = expArray[i].percentage + "%"
+        }
+        else{
+          itemPercentage[i].textContent = 0 + "%"
+        }
+        
       }
 }
 
@@ -212,54 +238,62 @@ getCurrentMonth(displayMonth); //get and display current month
 
 addButton.addEventListener('click', e => {
 
-  if (addType.value == "inc"){
-    newItem = new Income (incID, addDescription.value,addValue.value, incID)
-    insertIntoIncomeArray(newItem);
-    budgetIncome.textContent = addIncomes(incomeSum);
-    createIncomeElements();
-    calculateExpensesArrayPercentage();
-    updateExpensePercentage();    
-    incID = incID+1;
-
-  }
-
-  else if (addType.value =="exp"){
-    newItem = new Expense (expID, addDescription.value,addValue.value, expID)
-    insertIntoExpenseArray(newItem)
-    budgetExpense.textContent = addExpenses(expenseSum);
-    calculateExpensesArrayPercentage();
-    createExpenseElements();
-    updateExpensePercentage();
-    expID = expID+1;
-  }
-
-  var i;
-  for (i = 0; i < closeButton.length; i++) {
-    closeButton[i].onclick = function() {
-    var div = document.getElementById(this.parentNode.parentNode.parentNode.id);
-    var currentClass = this.parentNode.parentNode.parentNode.parentNode.className;
-    var currentID = this.parentNode.parentNode.parentNode.id;
-
-    if (currentClass == "income__list"){
-      removeItemOnce(incArray, currentID)
-      div.outerHTML=""; //delete the div
+  if(addDescription.value !="" && addValue.value !=""  ){
+    if (addType.value == "inc"){
+      newItem = new Income (incID, addDescription.value,addValue.value, incID)
+      insertIntoIncomeArray(newItem);
       budgetIncome.textContent = addIncomes(incomeSum);
+      createIncomeElements();
       calculateExpensesArrayPercentage();
-      updateExpensePercentage();  
+      updateExpensePercentage();    
+      incID = incID+1;
+  
     }
-
-    else if  (currentClass == "expenses__list"){
-      removeItemOnce(expArray, currentID)
-      div.outerHTML=""; //delete the div
+  
+    else if (addType.value =="exp"){
+      newItem = new Expense (expID, addDescription.value,addValue.value, expID)
+      insertIntoExpenseArray(newItem)
       budgetExpense.textContent = addExpenses(expenseSum);
+      calculateExpensesArrayPercentage();
+      createExpenseElements();
+      updateExpensePercentage();
+      expID = expID+1;
     }
-    
-    updateBudget(parseInt(budgetIncome.textContent), parseInt(budgetExpense.textContent));
+  
+    var i;
+    for (i = 0; i < closeButton.length; i++) {
+      closeButton[i].onclick = function() {
+      var div = document.getElementById(this.parentNode.parentNode.parentNode.id);
+      var currentClass = this.parentNode.parentNode.parentNode.parentNode.className;
+      var currentID = this.parentNode.parentNode.parentNode.id;
+  
+      if (currentClass == "income__list"){
+        removeItemOnce(incArray, currentID)
+        div.outerHTML=""; //delete the div
+        budgetIncome.textContent = addIncomes(incomeSum);
+        calculateExpensesArrayPercentage();
+        updateExpensePercentage();  
+      }
+  
+      else if  (currentClass == "expenses__list"){
+        removeItemOnce(expArray, currentID)
+        div.outerHTML=""; //delete the div
+        budgetExpense.textContent = addExpenses(expenseSum);
+      }
+      
+      updateBudget(parseInt(budgetIncome.textContent), parseInt(budgetExpense.textContent));
+      getExpensesPercentage();
+    }
   }
-}
-  updateBudget(parseInt(budgetIncome.textContent), parseInt(budgetExpense.textContent));
-  getExpensesPercentage();
-  resetFields();
+    updateBudget(parseInt(budgetIncome.textContent), parseInt(budgetExpense.textContent));
+    getExpensesPercentage();
+    resetFields();
+  }
+
+  else{
+    alert("Please ennter a valid input")
+  }
+ 
 
 })
 })();
