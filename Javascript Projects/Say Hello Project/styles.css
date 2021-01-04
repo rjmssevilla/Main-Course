@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+
+.container{
+  display:flex;
+  width: 50vw;
+  height: 80vh;
+  border: 2px solid black;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(0deg, rgba(25,145,147,1) 21%, rgba(53,194,159,1) 75%, rgba(194,178,144,1) 100%);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.greet{
+  margin:20px;
+}
+
+.greeting-namesBTN{
+  display:grid;
+  grid-template-columns: repeat(3,100px);
+  grid-auto-rows: auto;
+}
+
+.greeting-output{
+  width:50%;
+  height:30%;
+  background:black;
+  color:white;
+}
+
+.submit-btn{
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 0px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.greetNameBTN{
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.greetHelloGoodbyeBTN{
+  background-color: #f44336;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+

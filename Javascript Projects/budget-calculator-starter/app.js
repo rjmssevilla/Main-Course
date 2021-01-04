@@ -170,24 +170,7 @@ function createExpenseElements(){
   itemDescriptionDiv.appendChild(itemDescription);
 
   var itemValueInput = document.createTextNode("- " + addValue.value);
-  itemValue.appendChild(itemValueInput);
-  
-  /*
-  for (var i = 0; i < expArray.length; i++){
-    var itemPercentageInput;
-
-    if (isFinite(expArray[i].percentage)){
-      itemPercentageInput= document.createTextNode(expArray[i].percentage + "%%a");
-      itemPercentage.appendChild(itemPercentageInput)
-    }
-    else {
-      itemPercentageInput = document.createTextNode("hatdog");
-      itemPercentage.appendChild(itemPercentageInput);
-    }
-    
-  }
-  */
-  
+  itemValue.appendChild(itemValueInput);  
 }
 
 function removeItemOnce(someArray, currentID) {
