@@ -37,6 +37,9 @@
   height:30%;
   background:black;
   color:white;
+  display:flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .submit-btn{
@@ -65,7 +68,7 @@
   cursor: pointer;
 }
 
-.greetHelloGoodbyeBTN{
+.functionBTNS{
   background-color: #f44336;
   border: none;
   color: white;
@@ -76,5 +79,9 @@
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
+}
+
+.btn7, .btn8{
+  background-color:grey;
 }
 
