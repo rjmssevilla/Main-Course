@@ -16,8 +16,8 @@ contact_data = [
                 
 contacts = {"Analyn Cajocson" => {}, "Avion School" => {}}
 
-contacts["Analyn Cajocson"] = {"email" => contact_data[0][0], "Address" => contact_data[0][1], "Phone" => contact_data[0][2]} 
-contacts["Avion School"] = {"email" => contact_data[1][0], "Address" => contact_data[1][1], "Phone" => contact_data[1][2]} 
+contacts["Analyn Cajocson"] = {:email => contact_data[0][0], :address => contact_data[0][1], :phone => contact_data[0][2]} 
+contacts["Avion School"] = {:email => contact_data[1][0], :address => contact_data[1][1], :phone => contact_data[1][2]} 
 puts contacts
 
 #Number 4
