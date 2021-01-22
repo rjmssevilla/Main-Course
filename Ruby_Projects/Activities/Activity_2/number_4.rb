@@ -3,7 +3,7 @@ new_Arr = []
 
 arr.each do |index|
   if (index % 2 == 0)
-    new_Arr << item
+    new_Arr << index
   end
 end
 
