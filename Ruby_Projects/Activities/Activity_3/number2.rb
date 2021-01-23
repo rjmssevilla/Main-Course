@@ -1,28 +1,23 @@
-module CupcakeFrosting
-  def applyFrost
-    puts "Applying frosting"
+
+class Confection
+  def prepare
+     "Baking at 350 degrees for 25 minutes."
     end
 end
 
-class Confection
-  
-end
-
 class Cupcake < Confection
-  include CupcakeFrosting
   def prepare
-  puts "Baking at 350 degrees for 25 minutes"
+    puts super + "Applying frosting" 
   end
 end
 
 class BananaCake < Confection
   def prepare
-    puts "Baking at 350 degrees for 25 minutes"
-    end
+    puts super 
+  end
 end
 
 brownie = Cupcake.new
 saging = BananaCake.new
 brownie.prepare
-brownie.applyFrost
 saging.prepare
