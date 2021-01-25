@@ -11,6 +11,9 @@ arr1.each do |index|
   end
 end
 
-arr2 << count
-arr2 << sum
-puts arr2
+
+  arr2 << count
+  arr2 << sum
+
+
+puts arr2.inspect
