@@ -10,10 +10,9 @@ arr1.each do |index|
         sum = sum + index
   end
 end
-
-
+  if arr1.length > 0
   arr2 << count
   arr2 << sum
-
+  end
 
 puts arr2.inspect
