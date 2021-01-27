@@ -11,9 +11,9 @@ INSERT INTO classrooms VALUES (8, 8, 'B');
 INSERT INTO classrooms VALUES (9, 9, 'B');
 INSERT INTO classrooms VALUES (10, 10, 'C');
 
-SELECT students.first_name, students.middle_name, students.last_name, students.age,students.location, classroom.student_id,classroom.section
+SELECT students.first_name, students.middle_name, students.last_name, students.age,students.location, classrooms.student_id,classrooms.section
 FROM students
-INNER JOIN classroom ON students.id = classroom.id
+INNER JOIN classrooms ON students.id = classrooms.id
 
  SELECT students.first_name, students.middle_name, students.last_name, students.age,students.location, classrooms.student_id,classrooms.section
 FROM students
