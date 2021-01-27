@@ -25,4 +25,4 @@ RIGHT JOIN classrooms ON students.id = classrooms.id
 
 SELECT students.first_name, students.middle_name, students.last_name, students.age,students.location, classrooms.student_id,classrooms.section
 FROM students
-OUTER JOIN classrooms ON students.id = classrooms.id
+FULL JOIN classrooms ON students.id = classrooms.id
